@@ -1,0 +1,38 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    color: var(--primary-text-color);
+    font-weight: 400;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+}
+
+img {
+    height: auto;
+    display: block;
+    max-width: 100%; 
+}
+
+.sec-padding {
+    padding-top: 0;
+}
