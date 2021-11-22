@@ -1,17 +1,26 @@
 .projects {
     .filters {
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
         margin-bottom: 50px;
+
+        @media screen and (min-width: 786px) {
+            justify-content: center;
+        }
 
         .flex-element:not(:last-child) {
             margin-right: 9px;
+        }
+
+        .flex-element {
+            margin-bottom: 15px;
         }
     }
 
     .list-project {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
         margin: -15px;
 
         .flex-element:hover .description-text {
@@ -27,8 +36,8 @@
     }
 
     .flex-element-project {
-        width: 370px;
-        margin: 15px;
+        width: 450px;
+        margin-bottom: 30px;
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
         &:focus {
@@ -40,6 +49,49 @@
         }
     }
 }
+
+// .projects {
+//     .filters {
+//         display: flex;
+//         justify-content: center;
+//         margin-bottom: 50px;
+
+//         .flex-element:not(:last-child) {
+//             margin-right: 9px;
+//         }
+//     }
+
+//     .list-project {
+//         display: flex;
+//         flex-wrap: wrap;
+//         margin: -15px;
+
+//         .flex-element:hover .description-text {
+//             transform: translateY(0);
+//         }
+//     }
+
+//     .section-title {
+//         color: var(--title-text-color);
+//         font-weight: 700;
+//         font-size: 18px;
+//         line-height: 2;
+//     }
+
+//     .flex-element-project {
+//         width: 370px;
+//         margin: 15px;
+//         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//         &:focus {
+//             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+//         }
+
+//         &:hover {
+//             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+//         }
+//     }
+// }
 
 .project-top-wrap {
     position: relative;
