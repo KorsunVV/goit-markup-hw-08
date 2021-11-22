@@ -69,6 +69,14 @@
     width: 200px;
     height: 50px;
 }
+
+.footer-button {
+    @media screen and (min-width: 1200px) {
+        flex-shrink: 0;
+        margin-left: 12px;
+    }
+}
+
 .modal-button {
     &:hover {
         background: #188CE8;
