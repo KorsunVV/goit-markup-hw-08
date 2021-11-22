@@ -727,8 +727,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .footer-conteiner {
-    flex-direction: row;
-    flex-wrap: nowrap;
+    justify-content: space-between;
   }
 }
 
@@ -794,6 +793,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .footer-form {
+    flex-direction: row;
     width: auto;
   }
 }
@@ -807,8 +807,8 @@ img {
 
 @media screen and (min-width: 1200px) {
   .form-commit-footer {
-    width: auto;
     flex-direction: row;
+    align-items: flex-end;
   }
 }
 
@@ -833,6 +833,13 @@ img {
 
 .footer-modal-input:focus {
   border: 1px solid var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-modal-input {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
 }
 
 .footer-modal-field {

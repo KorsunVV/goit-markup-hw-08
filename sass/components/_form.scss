@@ -8,6 +8,7 @@
     }
 
     @media screen and (min-width: 1200px) {
+        flex-direction: row;
         width: auto;
     }
 }
@@ -19,8 +20,8 @@
     width: 100%;
 
     @media screen and (min-width: 1200px) {
-        width: auto;
         flex-direction: row;
+        align-items: flex-end;
     }
 }
 
@@ -44,6 +45,11 @@
 
     &:focus {
         border: 1px solid var(--accent-color);
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin: 0 auto;
+        margin-top: 20px;
     }
 }
 
