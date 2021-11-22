@@ -662,6 +662,12 @@ img {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-social {
+    margin-bottom: 0;
+  }
+}
+
 .footer-social-list {
   display: flex;
   justify-content: center;
@@ -713,7 +719,7 @@ img {
 
 .footer {
   background-color: var(--foot-color);
-  padding-top: 60px;
+  padding: 60px 0px;
 }
 
 .footer-conteiner {
@@ -745,6 +751,12 @@ img {
   align-items: center;
   text-align: center;
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-conteiner .footer-contact {
+    margin-bottom: 0;
+  }
 }
 
 .footer .logo {
