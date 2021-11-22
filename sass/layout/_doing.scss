@@ -1,8 +1,16 @@
 .doing {
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  
+    .doing {
+        display: block;
     .container {
         text-align: center;
     }
 }
+
 .doing-title {
     color: var(--title-text-color);
     font-weight: bold;
@@ -16,17 +24,18 @@
     flex-wrap: wrap;
 
     .flex-element {
-        width: calc((100% - 60px) / 3);   
+        width: calc((100% - 60px) / 3);
     }
+
     .flex-element:hover {
         .doin-text {
-         transform: translateY(0);
+            transform: translateY(0);
         }
     }
+
     .flex-element:not(:last-child) {
         margin-right: 30px;
     }
-
 }
 
 .doing-top-wrap {
@@ -50,3 +59,6 @@
     color: var(--bg-nav-color);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+}
+
