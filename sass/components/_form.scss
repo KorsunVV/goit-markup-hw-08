@@ -1,11 +1,12 @@
-.form-commit-footer {
-    display: flex;
-    align-items: flex-end;
-    margin-left: 93px;
-}
-
 .footer-form {
     display: flex;
+    flex-direction: column;
+}
+
+.form-commit-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer-modal-input {
@@ -19,7 +20,7 @@
     padding-left: 16px;
     outline: none;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-top: 10px;
+    margin: 20px 0;
     color: var(--contact-color) ;
 
     &:hover {
@@ -30,7 +31,9 @@
         border: 1px solid var(--accent-color);
     }
 }
-
+.footer-modal-field{
+    text-align: center;
+}
 .footer-modal-label {
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -38,11 +41,6 @@
     text-transform: uppercase;
     color: var(--bg-nav-color);
 }
-
-.footer-modal-field {
-    margin-right: 10px;
-}
-
 .footer-input {
     display: flex;
     justify-content: center;
@@ -62,3 +60,71 @@
     margin-left: 10px;
     fill: var(--bg-nav-color);
 }
+
+
+
+// _________________________________________________________________________________________________________
+// .footer-form {
+//     display: flex;
+// }
+
+// .form-commit-footer {
+//     display: flex;
+//     align-items: flex-end;
+//     margin-left: 93px;
+// }
+
+// .footer-modal-input {
+//     width: 100%;
+//     height: 50px;
+//     background-color: transparent;
+//     border: 1px solid rgba(255, 255, 255, 0.3);
+//     box-sizing: border-box;
+//     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+//     border-radius: 4px;
+//     padding-left: 16px;
+//     outline: none;
+//     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//     margin-top: 10px;
+//     color: var(--contact-color) ;
+
+//     &:hover {
+//         border: 1px solid var(--accent-color);
+//     }
+
+//     &:focus {
+//         border: 1px solid var(--accent-color);
+//     }
+// }
+
+// .footer-modal-label {
+//     font-size: 14px;
+//     line-height: calc(16 / 14);
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//     color: var(--bg-nav-color);
+// }
+
+// .footer-modal-field {
+//     margin-right: 10px;
+// }
+
+// .footer-input {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 358px;
+//     height: 50px;
+//     outline: none;
+// }
+
+// .footer-text-label {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// .modal-footer-icon {
+//     margin-left: 10px;
+//     fill: var(--bg-nav-color);
+// }
