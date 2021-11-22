@@ -152,19 +152,39 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-.section {
-  padding-bottom: 94px;
-  padding-top: 94px;
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 
-.container {
-  padding-right: 15px;
-  padding-left: 15px;
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.section {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .hero .hero-button {
@@ -300,19 +320,73 @@ img {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.quality {
+  padding-bottom: 0px;
+}
+
 .quality-list {
-  display: flex;
+  margin-bottom: -30px;
+}
+
+@media screen and (min-width: 768px) {
+  .quality-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .quality-list {
+    margin-right: 0px;
+  }
 }
 
 .quality-list .flex-element {
-  width: calc((100% - 90px) / 4);
+  margin-bottom: 30px;
 }
 
-.quality-list .flex-element:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .quality-list .flex-element {
+    width: 354px;
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .quality-list .flex-element {
+    width: calc((100% - 90px) / 4);
+    margin-right: 0px;
+  }
+  .quality-list .flex-element:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.box-icon {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--filter-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .box-icon {
+    width: 270px;
+  }
+}
+
+.quality-icon {
+  width: 70px;
+  height: 70px;
 }
 
 .quality-title {
+  text-align: center;
   margin-bottom: 10px;
   color: var(--title-text-color);
   text-transform: uppercase;
@@ -321,24 +395,14 @@ img {
   line-height: 1.14;
 }
 
+@media screen and (min-width: 768px) {
+  .quality-title {
+    text-align: start;
+  }
+}
+
 .quality-text {
   line-height: 1.71;
-}
-
-.quality-icon {
-  width: 70px;
-  height: 70px;
-}
-
-.box-icon {
-  height: 120px;
-  width: 270px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--filter-color);
-  border-radius: 4px;
-  margin-bottom: 30px;
 }
 
 .logo {
