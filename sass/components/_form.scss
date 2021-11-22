@@ -1,12 +1,27 @@
 .footer-form {
     display: flex;
     flex-direction: column;
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: auto;
+    }
 }
 
 .form-commit-footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+
+    @media screen and (min-width: 1200px) {
+        width: auto;
+        flex-direction: row;
+    }
 }
 
 .footer-modal-input {
@@ -20,8 +35,8 @@
     padding-left: 16px;
     outline: none;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin: 20px 0;
-    color: var(--contact-color) ;
+    margin-top: 20px;
+    color: var(--contact-color);
 
     &:hover {
         border: 1px solid var(--accent-color);
@@ -31,9 +46,12 @@
         border: 1px solid var(--accent-color);
     }
 }
-.footer-modal-field{
+
+.footer-modal-field {
     text-align: center;
+    width: 100%;
 }
+
 .footer-modal-label {
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -41,6 +59,7 @@
     text-transform: uppercase;
     color: var(--bg-nav-color);
 }
+
 .footer-input {
     display: flex;
     justify-content: center;
@@ -60,8 +79,6 @@
     margin-left: 10px;
     fill: var(--bg-nav-color);
 }
-
-
 
 // _________________________________________________________________________________________________________
 // .footer-form {
