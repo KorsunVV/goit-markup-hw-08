@@ -1067,6 +1067,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-conteiner .footer-contact {
     margin-bottom: 0;
+    margin-right: 70px;
   }
 }
 
@@ -1108,6 +1109,25 @@ img {
 
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.footer-inform {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-inform {
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-inform {
+    width: auto;
+  }
 }
 
 .footer-form {

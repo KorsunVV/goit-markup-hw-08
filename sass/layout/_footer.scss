@@ -30,11 +30,10 @@
         margin-bottom: 60px;
 
         @media screen and (min-width: 1200px) {
-        margin-bottom: 0;
+            margin-bottom: 0;
+            margin-right: 70px;
         }
     }
-
-    
 }
 
 .footer {
@@ -79,6 +78,20 @@
 
 .footer-item:not(:last-child) {
     margin-bottom: 9px;
+}
+
+.footer-inform {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 768px) {
+        align-items: flex-start;
+    }
+    @media screen and (min-width: 1200px) {
+        width: auto;
+    }
 }
 
 // _______________________________________________________________________________________
