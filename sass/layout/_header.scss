@@ -140,9 +140,14 @@
 }
 
 .gamburger-open {
+    display: none;
     background: transparent;
     border: none;
     color: ffffff;
+    margin-right: 0;
+    @media screen and(max-width: 786px){
+        display: block;
+    }
 }
 
 .gamburger-close{
