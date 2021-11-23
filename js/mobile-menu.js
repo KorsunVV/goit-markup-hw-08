@@ -1,6 +1,6 @@
 (() => {
   const refs = {
-    openMenuBtn: document.querySelector('gamburger-open'),
+    openMenuBtn: document.querySelector('.gamburger-open'),
     closeMenuBtn: document.querySelector('.gamburger-close'),
     menu: document.querySelector('.mob-menu'),
   };
