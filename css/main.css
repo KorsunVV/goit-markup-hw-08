@@ -497,10 +497,6 @@ img {
   padding-bottom: 0px;
 }
 
-.quality-list {
-  margin-bottom: -30px;
-}
-
 @media screen and (min-width: 768px) {
   .quality-list {
     display: flex;
@@ -652,6 +648,13 @@ img {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: calc(60 / 44);
+  }
+}
+
 .doing {
   display: none;
 }
@@ -754,9 +757,6 @@ img {
     width: 354px;
     margin-bottom: 30px;
   }
-  .our-team .flex-element:not(:last-child) {
-    margin-right: 30px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -764,7 +764,7 @@ img {
     width: 270px;
     margin-bottom: 30px;
   }
-  .our-team .flex-element:nth-child(odd) {
+  .our-team .flex-element:not(:last-child) {
     margin-right: 30px;
   }
 }
@@ -782,6 +782,16 @@ img {
   padding-bottom: 10px;
 }
 
+@media screen and (min-width: 1200px) {
+  .our-team .list-title {
+    width: 270px;
+    margin-bottom: 30px;
+  }
+  .our-team .list-title:nth-child(odd) {
+    margin-right: 30px;
+  }
+}
+
 .our-team .list-text {
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -795,6 +805,14 @@ img {
   line-height: calc(33 / 28);
   margin-bottom: 30px;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .our-team-title {
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    margin-bottom: 50px;
+  }
 }
 
 .title-clients {
@@ -1034,6 +1052,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-conteiner {
     justify-content: space-between;
+    width: 1200px;
   }
 }
 
@@ -1197,12 +1216,18 @@ img {
 .projects .filters {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 786px) {
   .projects .filters {
     justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects .filters {
+    margin-bottom: 50px;
   }
 }
 
@@ -1230,7 +1255,6 @@ img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: -15px;
   }
   .projects .list-project .flex-element:hover .description-text {
     transform: translateY(0);
@@ -1342,24 +1366,25 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  width: 100vw;
+  height: 100vh;
   background: var(--bg-nav-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
 }
 
-@media screen and (max-width: 786px) {
+@media screen and (min-width: 480px) {
   .modal {
     width: 450px;
+    height: 609px;
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (min-width: 1200px) {
   .modal {
-    width: 100vw;
-    height: 100vh;
+    width: 528px;
+    height: 581px;
   }
 }
 
@@ -1462,10 +1487,17 @@ img {
 .check-text {
   display: flex;
   align-items: center;
-  font-size: 14px;
-  line-height: calc(24 /14);
+  font-size: 12px;
+  line-height: calc(14 /12);
   color: var(--primary-text-color);
   margin-left: 14px;
+}
+
+@media screen and (min-width: 1200px) {
+  .check-text {
+    font-size: 14px;
+    line-height: calc(24 /14);
+  }
 }
 
 .span-box {
@@ -1480,11 +1512,18 @@ img {
 }
 
 .check-link {
-  font-size: 14px;
-  line-height: calc(24 /14);
+  font-size: 12px;
+  line-height: calc(14 /12);
   color: var(--accent-color);
   text-decoration: underline;
   margin-left: 7px;
+}
+
+@media screen and (min-width: 1200px) {
+  .check-link {
+    font-size: 14px;
+    line-height: calc(24 /14);
+  }
 }
 
 .input-check:checked + .check-text .span-box {
