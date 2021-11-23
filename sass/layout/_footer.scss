@@ -32,6 +32,7 @@
         @media screen and (min-width: 1200px) {
             margin-bottom: 0;
             margin-right: 70px;
+            text-align: left;
         }
     }
 }
@@ -42,6 +43,10 @@
         display: block;
         margin: 0 auto;
         margin-bottom: 20px;
+
+        @media screen and (min-width: 1200px) {
+            margin-left: 0;
+        }
     }
 
     .list {
@@ -89,6 +94,7 @@
     @media screen and (min-width: 768px) {
         align-items: flex-start;
     }
+
     @media screen and (min-width: 1200px) {
         width: auto;
     }
