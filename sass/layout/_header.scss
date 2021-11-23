@@ -117,3 +117,102 @@
         }
     }
 }
+
+// _________________________________________________GAMBURGER____________________________
+.ikon-gamburger {
+    width: 40px;
+    height: 40px;
+    background-color: var(--bg-nav-color);
+
+    &:hover {
+        fill: var(--accent-color);
+    }
+
+    &:focus {
+        fill: var(--accent-color);
+    }
+}
+
+.gamburger {
+    margin: 0 auto;
+    background-color: var(--bg-nav-color);
+    border: none;
+}
+
+.gamburger-open {
+    background: transparent;
+    border: none;
+    color: ffffff;
+}
+
+.gamburger-close{
+    display: block;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+.mob-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-nav-color);
+    padding-left: 40px;
+}
+
+.mob-menu-item {
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+}
+
+.mob-menu-link {
+    font-size: 40px;
+    line-height: calc(47 / 40);
+    color: var(--title-text-color);
+}
+
+.mob-menu-link:hover, .mob-menu-link:focus {
+    color: var(--accent-color);
+}
+
+.mob-tel {
+    display: block;
+    font-size: 34px;
+    line-height: calc(40 / 34);
+    color: var(--accent-color);
+    margin-bottom: 32px;
+}
+
+.mob-email {
+    display: block;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    color: var(--primary-text-color);
+    margin-bottom: 64px;
+}
+
+.mob-list-social {
+    display: flex;
+    margin-right: 10px;
+}
+
+.mob-social-menu-item {
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    margin-right: 10px;
+    padding-right: 10px;
+    color: var(--accent-color);
+
+    &:not(:last-child) {
+        padding-right: 10px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+}
+
+.mob-social-link {
+    color: var(--accent-color);
+}
